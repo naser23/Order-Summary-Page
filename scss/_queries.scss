@@ -6,8 +6,75 @@
   }
 
   .order-summary-main-text {
-    padding-top: 0;
+    padding-top: 10px;
     padding-bottom: 0;
-    font-size: 0.75rem;
+    font-size: 0.85rem;
   }
+}
+
+@media (min-width: 767.98px) {
+  body {
+    @include background($background-desktop);
+  }
+  .container {
+    width: 90%;
+
+    #order-summary {
+      .order-summary-header {
+        font-size: 2rem;
+      }
+
+      .order-summary-main-text {
+        font-size: 1.5rem;
+        padding: 1rem 10%;
+      }
+    }
+
+    .select-plan {
+      .annual-plan {
+        font-size: 1.25rem;
+      }
+
+      a {
+        font-size: 1.3rem;
+      }
+    }
+
+    #option-buttons {
+      font-size: 1.25rem;
+    }
+  }
+}
+
+@media (min-width: 991.98px) {
+  .container {
+    width: 500px;
+    height: 700px;
+
+    #order-summary {
+      .order-summary-header {
+        font-size: 1.75rem;
+      }
+      .order-summary-main-text {
+        font-size: 1.2rem;
+      }
+      .select-plan {
+        .annual-plan {
+          font-size: 1rem;
+        }
+
+        img {
+          width: 15%;
+        }
+
+        a {
+          font-size: 1rem;
+        }
+      }
+    }
+  }
+}
+
+// ipad landscape styles
+@media (width: 1024px) and (orientation: landscape) {
 }
