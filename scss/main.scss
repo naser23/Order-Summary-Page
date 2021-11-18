@@ -1,4 +1,5 @@
 @import "config";
+@import "utilities";
 
 * {
   margin: 0;
@@ -7,5 +8,81 @@
 }
 
 body {
-  background-color: $pale-blue;
+  background: $pale-blue;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
+
+.container {
+  width: 90%;
+  height: 90%;
+  background: lightgreen;
+  border-radius: 25px;
+
+  header {
+    width: 100%;
+    height: 30%;
+  }
+
+  .image-hero {
+    width: 100%;
+    height: 100%;
+    @include background($img-hero);
+    border-top-left-radius: 25px;
+    border-top-right-radius: 25px;
+  }
+
+  #order-summary {
+    width: 100%;
+    height: 40%;
+    background: lightsalmon;
+    display: flex;
+    flex-direction: column;
+
+    .order-summary-header {
+      padding-top: 1rem;
+      text-align: center;
+      height: 20%;
+      @include font-weight(900);
+    }
+
+    .order-summary-main-text {
+      text-align: center;
+      line-height: 1.4;
+      height: 40%;
+      font-size: 1rem;
+      padding-left: 2rem;
+      padding-right: 2rem;
+      @include font-weight(500);
+    }
+
+    .select-plan {
+      width: 90%;
+      height: 40%;
+      background: lightgray;
+      margin: auto;
+      border-radius: 15px;
+      display: flex;
+      justify-content: space-around;
+      align-items: center;
+
+      img {
+        width: 20%;
+      }
+
+      .annual-plan {
+        width: 40%;
+        @include font-weight(500);
+      }
+
+      a {
+        @include font-weight(700);
+      }
+    }
+  }
+}
+
+@import "queries";

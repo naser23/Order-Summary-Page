@@ -1,0 +1,13 @@
+// for small devices
+@media (width: 320px) {
+  .order-summary-header {
+    padding-bottom: 10px;
+    font-size: 1.15rem;
+  }
+
+  .order-summary-main-text {
+    padding-top: 0;
+    padding-bottom: 0;
+    font-size: 0.75rem;
+  }
+}
