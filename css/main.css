@@ -94,7 +94,7 @@ body {
 
 .container {
   width: 90%;
-  height: 90%;
+  height: 80%;
   border-radius: 25px;
 }
 
@@ -253,6 +253,23 @@ body {
   }
 }
 
+@media (min-width: 567.98px) {
+  .container {
+    width: 50%;
+    height: 100%;
+  }
+  .container #order-summary .order-summary-header {
+    font-size: 1.25rem;
+  }
+  .container #order-summary .order-summary-main-text {
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+  }
+  .container #order-summary .select-plan {
+    height: 30%;
+  }
+}
+
 @media (min-width: 767.98px) {
   body {
     background-image: url(/Order-Summary-Page/images/pattern-background-desktop.svg);
@@ -267,7 +284,7 @@ body {
     font-size: 2rem;
   }
   .container #order-summary .order-summary-main-text {
-    font-size: 1.5rem;
+    font-size: 1.75rem;
     padding: 1rem 10%;
   }
   .container .select-plan .annual-plan {
@@ -297,6 +314,32 @@ body {
   }
   .container #order-summary .select-plan img {
     width: 15%;
+  }
+  .container #order-summary .select-plan a {
+    font-size: 1rem;
+  }
+}
+
+@media (min-device-width: 800px) and (max-device-width: 915.98px) and (orientation: landscape) and (-webkit-min-device-pixel-ratio: 1) {
+  .container {
+    width: 50%;
+    height: 100%;
+  }
+  .container #order-summary .order-summary-header {
+    font-size: 1.25rem;
+  }
+  .container #order-summary .order-summary-main-text {
+    padding: 0.5rem 1rem;
+    font-size: 0.9rem;
+  }
+  .container #order-summary .select-plan {
+    height: 30%;
+  }
+  .container #order-summary .select-plan img {
+    width: 12%;
+  }
+  .container #order-summary .select-plan .annual-plan {
+    font-size: 1rem;
   }
   .container #order-summary .select-plan a {
     font-size: 1rem;
